@@ -1,0 +1,25 @@
+{
+  "name": "test-suite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wrappid/test-suite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wrappid/test-suite/issues"
+  },
+  "homepage": "https://github.com/wrappid/test-suite#readme",
+  "devDependencies": {
+    "@jest/globals": "^29.7.0",
+    "@types/jest": "^29.5.12",
+    "supertest": "^7.0.0",
+    "ts-jest": "^29.1.2"
+  }
+}
