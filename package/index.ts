@@ -1,1 +1,5 @@
-// import { wrappidTestSuite } from "./wrappidTestSuite"
+import { WrappidTestSuite } from "./WrappidTestSuite";
+
+export {
+    WrappidTestSuite
+};

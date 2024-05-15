@@ -1,16 +1,13 @@
 {
-  "name": "package",
-  "version": "1.0.0",
-  "description": "",
+  "name": "@wrappid/test-suite",
+  "version": "0.0.1",
+  "description": "This is a test suite for wrappid service.",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "author": "",
   "license": "ISC",
   "peerDependencies": {
-  "@jest/globals": "^29.7.0",
-  "@types/jest": "^29.5.12",
-  "supertest": "^7.0.0",
-  "ts-jest": "^29.1.2"} 
+    "@jest/globals": "^29.7.0",
+    "@wrappid/service-core": "^0.0.90",
+    "supertest": "^7.0.0"
+  }
 }

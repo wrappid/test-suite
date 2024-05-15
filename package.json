@@ -1,25 +1,59 @@
 {
-  "name": "test-suite",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "@wrappid/test-suite",
+  "version": "0.0.1",
+  "description": "This is a test suite for wrappid service.",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "attributions:gen": "node ./scripts/attributions.gen.js",
+    "prepare": "husky install ",
+    "docs:generate": "npx typedoc package/index.ts",
+    "code:lint": "eslint --ignore-path .gitignore package",
+    "code:format": "npm run code:lint -- --fix",
+    "test": "exit 0",
+    "build": "npx tsc",
+    "release": "standard-version --bumpFiles ./package.json ./package/package.json ./package-lock.json ./package/package-lock.json",
+    "publish": "npm publish *.tgz --access public --registry=https://npm.pkg.github.com --scope=@wrappid"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/wrappid/test-suite.git"
+  "keywords": [],
+  "author": {
+    "name": "Wrappid",
+    "email": "wrappid.framework@gmail.com",
+    "url": "https://www.github.com/wrappid/test-suite"
   },
-  "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/wrappid/test-suite/issues"
   },
   "homepage": "https://github.com/wrappid/test-suite#readme",
   "devDependencies": {
+    "@aws-sdk/client-s3": "~3.525.0",
+    "@babel/cli": "~7.21.0",
+    "@babel/core": "~7.21.0",
+    "@babel/polyfill": "~7.12.1",
+    "@babel/preset-env": "~7.20.2",
+    "@commitlint/cli": "~17.5.0",
+    "@commitlint/config-conventional": "~17.4.4",
+    "@commitlint/prompt-cli": "~17.5.0",
     "@jest/globals": "^29.7.0",
-    "@types/jest": "^29.5.12",
+    "@types/supertest": "~6.0.2",
+    "@typescript-eslint/eslint-plugin": "~5.62.0",
+    "@typescript-eslint/parser": "~5.62.0",
+    "@wrappid/service-core": "^0.0.90",
+    "cors": "^2.8.5",
+    "eslint": "~8.56.0",
+    "eslint-import-resolver-typescript": "~3.6.1",
+    "eslint-plugin-etc": "~2.0.2",
+    "eslint-plugin-import": "~2.27.5",
+    "eslint-plugin-jsdoc": "~46.10.1",
+    "eslint-plugin-node": "~11.1.0",
+    "eslint-plugin-promise": "~6.1.1",
+    "eslint-plugin-require-extensions": "~0.1.3",
+    "eslint-plugin-sort-keys-fix": "~1.1.2",
+    "eslint-plugin-unused-imports": "~2.0.0",
+    "husky": "~8.0.3",
+    "license-checker": "~25.0.1",
+    "standard-version": "~9.5.0",
     "supertest": "^7.0.0",
-    "ts-jest": "^29.1.2"
+    "swagger-ui-express": "^5.0.0",
+    "typescript": "~5.3.3"
   }
 }

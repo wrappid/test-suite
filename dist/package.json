@@ -1,0 +1,13 @@
+{
+    "name": "@wrappid/test-suite",
+    "version": "0.0.1",
+    "description": "This is a test suite for wrappid service.",
+    "main": "index.js",
+    "author": "",
+    "license": "ISC",
+    "peerDependencies": {
+        "@jest/globals": "^29.7.0",
+        "@wrappid/service-core": "^0.0.90",
+        "supertest": "^7.0.0"
+    }
+}
